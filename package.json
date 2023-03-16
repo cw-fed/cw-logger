@@ -1,0 +1,14 @@
+{
+  "name": "@cw/cw-logger",
+  "version": "1.0.0",
+  "description": "logger",
+  "keywords": ["logger", "Console"],
+  "files": ["dist"],
+  "author": "weishijiestein@outlook.com",
+  "scripts": {
+    "build": "tsc --build tsconfig.json"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.5"
+  }
+}
