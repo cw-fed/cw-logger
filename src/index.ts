@@ -44,7 +44,7 @@ function makeLogger(): Logger {
   CONSOLE_LEVELS.forEach(name => {
     logger[name] = (...args: any[]) => {
       if (enable) {
-        consoleSandBox(window.console[name](`Logger [${name}:]`, ...args) as any);
+        consoleSandBox(() => window.console[name](`Logger [${name}:]`, ...args) as any);
       }
     };
   });
