@@ -2,14 +2,20 @@
   "name": "@cw/cw-logger",
   "version": "1.0.0",
   "description": "logger",
-  "keywords": ["logger", "Console"],
-  "files": ["dist"],
+  "keywords": [
+    "logger",
+    "Console"
+  ],
+  "files": [
+    "dist"
+  ],
   "author": "weishijiestein@outlook.com",
   "scripts": {
     "build": "tsc --build tsconfig.json",
     "prepublishOnly": "npm run build && np --no-cleanup --yolo --no-publish --any-branch"
   },
   "devDependencies": {
+    "np": "^7.6.3",
     "typescript": "^4.9.5"
   }
 }
